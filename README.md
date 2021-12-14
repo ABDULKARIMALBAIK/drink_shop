@@ -1,4 +1,4 @@
-# Eat it
+# Drink Shop
 
 Android project to deliver drinks to clients , there is 2 apps are connected by PHP backend to complete the mission:
 
