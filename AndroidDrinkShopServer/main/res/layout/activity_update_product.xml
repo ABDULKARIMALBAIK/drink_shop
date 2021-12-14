@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_drink"
+        app:srcCompat="@drawable/ic_filter_hdr_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <EditText
+        android:id="@+id/edt_drink_name"
+        android:hint="Name"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_drink_price"
+        android:hint="Price"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner_menu_id"
+        app:ms_background_color="#88FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:text="UDPATE"
+            android:background="@drawable/design_color_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:text="DELETE"
+            android:background="@drawable/design_color_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
